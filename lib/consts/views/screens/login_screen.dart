@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 5.heightBox,
                 loginWith.text.color(Colors.grey).make(),
                 10.heightBox,
-                loginImages(),
+                loginImages().onTap(() {}),
               ],
             )
                 .box
