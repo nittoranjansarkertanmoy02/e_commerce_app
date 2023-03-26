@@ -11,3 +11,13 @@ const confirmPassword = "Confirm password";
 
 const createNewAccount = "or create a new account";
 const loginWith = "Login with";
+
+//home screens
+
+const searchAnything = "Search anything....",
+    todayDeal = "Today's Deals",
+    flashSale = "Flash Sale",
+    toSeller = " Top Sellers",
+    brand = "Brands",
+    topCatagories = " Top Catagories",
+    featureCatagories = " Feature Catagories";
