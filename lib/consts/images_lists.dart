@@ -16,3 +16,20 @@ const featureCatagoryTitle1 = [menDress, boyDress, boysWatch];
 
 //Feature Products
 const featureProducts1 = [imgP1, imgP2, imgP3, imgP4, imgP5, imgP6];
+
+//-------------------Catagories Images --------------------------------
+const catagoryImages = [
+  imgFc1,
+  imgFc2,
+  imgFc3,
+  imgFc4,
+  imgFc5,
+  imgFc6,
+  imgFc7,
+  imgFc8,
+  imgFc9,
+  imgFc8,
+  imgFc1,
+  imgFc2,
+  imgFc3
+];

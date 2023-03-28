@@ -2,11 +2,14 @@
 
 import 'package:e_commerce_app/consts/consts.dart';
 import 'package:e_commerce_app/consts/images_lists.dart';
+import 'package:e_commerce_app/consts/views/catgories/catagory_details.dart';
 import 'package:e_commerce_app/widgets/featureButton.dart';
 import 'package:e_commerce_app/widgets/featureProducts.dart';
 import 'package:e_commerce_app/widgets/home_buttons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/get_core.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -202,16 +205,53 @@ class HomeScreen extends StatelessWidget {
                   return Image.asset(
                     brandList[index],
                     fit: BoxFit.fill,
-                  );
+                  )
+                      .box
+                      .rounded
+                      .shadowMd
+                      .clip(Clip.antiAlias)
+                      .margin(EdgeInsets.symmetric(horizontal: 5.0))
+                      .make();
+                },
+              ),
+              20.heightBox,
+              //All products Section
+              GridView.builder(
+                shrinkWrap: true,
+                itemCount: 6,
+                physics: NeverScrollableScrollPhysics(),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  mainAxisSpacing: 8,
+                  mainAxisExtent: 250,
+                  crossAxisSpacing: 8,
+                  crossAxisCount: 2,
+                ),
+                itemBuilder: (context, index) {
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        featureProducts1[index],
+                        fit: BoxFit.fill,
+                      ),
+                      Spacer(),
+                      featureProductNames[index].text.size(15.0).make(),
+                      productNames[index]
+                          .text
+                          .fontFamily(bold)
+                          .size(14.0)
+                          .make(),
+                      5.heightBox,
+                      featureProductsPrice[index]
+                          .text
+                          .color(Colors.red)
+                          .fontFamily(bold)
+                          .size(18.0)
+                          .make()
+                    ],
+                  ).box.white.roundedSM.make().onTap(() {Get.to(()=>CatagoryDetails(title: "Dummy List"));});
                 },
               )
-                  .box
-                  .rounded
-                  .clip(Clip.antiAlias)
-                  .padding(EdgeInsets.all(5.0))
-                  .margin(EdgeInsets.symmetric(horizontal: 5.0))
-                  .shadowSm
-                  .make()
             ],
           ),
         ]),
