@@ -20,6 +20,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.transparent,
         // ignore: prefer_const_constructors
         appBarTheme: AppBarTheme(
+          // ignore: prefer_const_constructors
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          ),
           backgroundColor: Colors.transparent,
         ),
         fontFamily: regular,
