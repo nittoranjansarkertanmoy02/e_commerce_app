@@ -134,3 +134,27 @@ const motorcycleDetails = [
   suzukimotorCycle,
   chinamotorCycle
 ];
+
+//=====================================
+
+const video = "Video";
+const ratiings = "Rationgs";
+const reviews = "Reviews";
+const ppolicy = " Privacy Policy";
+const rpolicy = "Return Policy";
+const spolicy = "Support Policy";
+
+const rulesDes = [video, ratiings, reviews, ppolicy, rpolicy, spolicy];
+
+//=======================ACcount Page=====================
+
+const logout = "Log Out";
+
+const wallet = "MY Wallet";
+const myOder = "My Order";
+const myWish = "My WishList";
+const points = "Earned Points";
+const rePoints = "Refuned Points";
+const mess = "Message";
+
+const accList = [wallet, myOder, myWish, points, rePoints, mess];

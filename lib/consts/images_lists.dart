@@ -33,3 +33,6 @@ const catagoryImages = [
   imgFc2,
   imgFc3
 ];
+
+//==================Account Images================
+const acIcons = [imgP1, imgP2, imgP3, imgP4, imgP5, imgP6];

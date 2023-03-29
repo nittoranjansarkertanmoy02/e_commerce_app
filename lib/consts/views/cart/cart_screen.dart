@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/widgets/bg_widgets.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -5,8 +6,10 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
-    );
+    return bgWidget(
+        child: Scaffold(
+          
+      body: Column(),
+    ));
   }
 }
