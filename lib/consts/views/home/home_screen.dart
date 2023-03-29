@@ -143,7 +143,9 @@ class HomeScreen extends StatelessWidget {
                               featureButton(featureCatagoryList1[index],
                                   featureCatagoryTitle1[index]),
                             ],
-                          )),
+                          )
+                          
+                          ),
                 ),
               ),
               10.heightBox,
