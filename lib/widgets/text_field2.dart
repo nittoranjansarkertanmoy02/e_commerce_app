@@ -3,19 +3,18 @@
 import 'package:e_commerce_app/consts/consts.dart';
 import 'package:flutter/material.dart';
 
-Widget customTextField1(
-    String? name, String? confirmPassword, controller, obs) {
+Widget customTextField2(String? title, String? hint, controller, obs) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     // ignore: prefer_const_literals_to_create_immutables
     children: [
       // ignore: prefer_const_constructors
-      name!.text.color(darkRed).semiBold.size(15).make(),
+      title!.text.color(darkRed).semiBold.size(15).make(),
       TextFormField(
         obscureText: obs,
         controller: controller,
         decoration: InputDecoration(
-            hintText: name,
+            hintText: hint,
             hintStyle: TextStyle(
               fontFamily: semibold,
               color: Colors.grey,
