@@ -157,4 +157,4 @@ const points = "Earned Points";
 const rePoints = "Refuned Points";
 const mess = "Message";
 
-const accList = [wallet, myOder, myWish, points, rePoints, mess];
+const accList = [wallet, myOder, mess];

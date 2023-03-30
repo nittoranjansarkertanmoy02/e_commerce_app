@@ -35,4 +35,4 @@ const catagoryImages = [
 ];
 
 //==================Account Images================
-const acIcons = [imgP1, imgP2, imgP3, imgP4, imgP5, imgP6];
+const acIcons = [icOrder, icOrder, icMessages];

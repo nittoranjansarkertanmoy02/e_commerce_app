@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 Widget customTextField(
   String? title,
   String? hint,
+  controller,
 ) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -14,6 +15,7 @@ Widget customTextField(
       // ignore: prefer_const_constructors
       title!.text.color(darkRed).semiBold.size(15).make(),
       TextFormField(
+        controller: controller,
         decoration: InputDecoration(
             hintText: hint,
             hintStyle: TextStyle(
@@ -31,5 +33,3 @@ Widget customTextField(
     ],
   );
 }
-
-
