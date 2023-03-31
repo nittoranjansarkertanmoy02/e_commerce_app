@@ -5,12 +5,11 @@ import 'package:e_commerce_app/consts/consts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 
-
-
-
 //For Login Method
 
 class AuthController extends GetxController {
+  var isLoading = false.obs;
+ 
   Future<UserCredential?> loginMethod({email, password, context}) async {
     UserCredential? userCredential;
 
@@ -41,8 +40,13 @@ class AuthController extends GetxController {
   storeUserData({name, password, email}) async {
     DocumentReference store =
         await firestore.collection(userCollection).doc(currentUser!.uid);
-    store.set(
-        {'name': name, 'password': password, 'email': email, 'imgUrl': ''});
+    store.set({
+      'name': name,
+      'password': password,
+      'email': email,
+      'imgUrl': '',
+      'id': currentUser!.uid,
+    });
   }
 
   //sign Out Method
